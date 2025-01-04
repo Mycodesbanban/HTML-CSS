@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+CO+Guides&display=swap');
+body{
+    background-color: white;
+    background-image: linear-gradient(to right, blue , green , yellow);
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 20px ;
+    width: 700px;
+    text-align: center;
+    padding: 10px;
+    margin:auto;
+}
+
+header{
+    background-color: yellowgreen;
+    text-align: center;
+    box-shadow: 10px 5px 5px 10px;
+    
+}
+nav > a{
+    color: blue;
+    margin: 10px 10px 10px 10px ;
+}
+main{
+    background-color: rgba(26, 170, 81, 0.815);
+    text-align: center;
+    width: 600px;
+    border-radius: 20px 20px 20px 20px ;
+   margin: auto;
+    
+}
+img{
+    height: 300px;
+    width: 500px;
+}
+aside{
+    background-color: rgb(43, 204, 21);
+    width: 400px;;
+    height: 400px;
+    margin:auto;
+}
+div#lista{
+    margin: 10px;
+}

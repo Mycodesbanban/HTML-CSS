@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens em html 5</title>
+</head>
+<body>
+    <h1>imagens dinâmicas</h1>
+    <p>tente abrir esse site em varios dipositivos diferentes</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/mediao.png" type="image/png">
+        <img src="imagens/grtandeo.png" alt="imagen flexivel">
+    </picture>
+    <h1> audio</h1>
+    <audio preload="matadata" autoplay controls loop>
+        <source src="midia/victormoury-praga-de-amor-victor-moury-e-michelle-melo-f8308a85.mp3" type="audio/mpeg"> 
+        <source src="midia/victormoury-praga-de-amor-victor-moury-e-michelle-melo-f8308a85.ogg" type="audio/ogg">
+        <source src="midia/victormoury-praga-de-amor-victor-moury-e-michelle-melo-f8308a85.wav" type=" audio/wav">
+        <p>infelismente seu navegador não consegue reproduzir áudio. <a href="midia/victormoury-praga-de-amor-victor-moury-e-michelle-melo-f8308a85.mp3">clique aqui para abaixar o arquievo mp3</a></p>
+    </audio>
+</body>
+</html>

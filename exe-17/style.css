@@ -1,0 +1,19 @@
+@charset "UFT8";
+body{
+    font-family: "Arial ";
+   /* nos temos as medidas absolutas que são
+    cm , mm, in,px,pt,pq 
+    
+    
+    medidas relativas
+    em , ex , rem , vw , vh , %
+    16px é igual a um em
+ 
+   */
+
+   /* font-size: 1em; */
+   /* font-weight: 400; */
+   /* font-style: italic; */
+   /* text-decoration: underline; */
+   font: italic bolder 3em "Arial", sans-serif;
+}

@@ -1,0 +1,199 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* font-face usando para importar fontes  */
+@font-face {
+    font-weight: normal;
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+/* root criar variaveis é e obrigatorio usar dois -- no começo */
+:root {
+    --cor0: #04BFAD;
+    --cor1: #0FC2C0;
+    --cor2: #0CABA8;
+    --cor3: #008F8C;
+    --cor4: #015958;
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Lato", serif;
+    --fonte-android: 'Android', 'cursive';
+}
+/* seletor geral */
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrão);
+
+}
+a.externo::after{
+    content: '\00A0🔗';
+
+}
+ main p{
+    margin:15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+main strong{
+    color: #015958;
+    padding: 2px 6px;
+}
+main a{
+    color: #015958;
+    background-color: #0FC2C0;
+    text-decoration: bold;
+}
+main a:hover{
+    text-decoration: underline;
+    background-color: violet;
+}
+
+header {
+    background-image:linear-gradient(to right , #015958 , #04BFAD) ;
+    min-width: 150px;
+    text-align: center;
+    padding-top: 30px;
+
+    
+}
+
+header>h1 {
+    font-family: var(--fonte-destaque);
+    color: white;
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow:4px 2px 2px 4px black;
+
+}
+
+
+header>p {
+    font-family: var(--fonte-padrão);
+    font-size: 1.2em;
+    max-width:500px; ;
+    color:white;
+    margin:auto;
+    padding-right:10px;
+    padding-left: 10px;
+    text-shadow:2px 2px 0px rgba(0, 0, 0, 0.425);
+    text-align: justify;
+
+}
+nav{
+    background-color: var(--cor3);
+    padding:10px;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.664)
+}
+/* usamos trasintion-duration para determinar o tempo que vai levar para tal coisa */
+nav>a {
+    color: white;
+    padding:11px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    
+}
+nav>a:hover{
+    background-color: aquamarine;
+    color: antiquewhite;
+}
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    background-color:rgb(169, 177, 172);
+    min-width: 300px;
+    max-width: 800px;
+    padding: 30px;
+    margin:auto;
+    margin-bottom: 20px;
+    box-shadow:10px 10px 10px 10px rgba(0, 0, 0, 0.589);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+main img{
+    width:100%;
+}
+
+main h1 {
+    color: #015958;
+    font-family: var(--fonte-android);
+
+
+}
+
+main > article > h1,h2 { font-family:var(--fonte-android);}
+
+main h2 {
+    font-family: var(--fonte-android);
+    color:#0a9486;
+    font-size: 1.3em;
+    background-image: linear-gradient(to right , #10f0d9 , transparent);
+    text-indent: 10px;
+}
+div.video{
+    background-color: #04BFAD;
+    margin-bottom: 30px;
+    margin: 0px -20px 0px -20px;
+    padding: 30px;
+    padding: 30%;
+    position: relative;
+
+}
+div.video>iframe{
+    position: absolute;
+    top:5%;
+    left:5%;
+    width: 90%;
+    height: 90%;
+}
+main img.pequena{
+    max-width: 350px;
+    display:block;
+    margin:auto;
+}
+aside{
+    background-color: #0a9486;
+    border-radius: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:3px 3px 8px black;
+
+}
+aside > ul{
+    /* não é compativel com todo tipo de navegador o list-style-type, a tag columns serve para dividir a listas em quantos numeros nós digitamos  */
+    list-style-type: '\002726\00A0';
+    list-style-position: inside;
+    columns: 2;
+
+}
+aside > h3{
+    background-color: darkgreen;
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border: 10px 10px  0px 0px ;
+}
+footer{
+    background-color: var(--cor4);
+    color:rgba(255, 255, 255, 0.582);
+    text-align: center;
+    padding:10px;
+    font-size: 0.6;
+}
+footer a{
+    text-decoration: bold;
+    color: rgb(163, 18, 163);
+    text-decoration: underline;
+  
+}
+footer a:hover{
+    background-color: rgb(40, 158, 158);
+}
