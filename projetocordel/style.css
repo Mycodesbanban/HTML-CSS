@@ -27,6 +27,7 @@ header{
     border-radius: 5px 5px 5px 5px;
     text-decoration: none;
    font-family: var(--font1);
+   box-shadow: 10px 10px ;
 
 }
 header > h1{
@@ -57,16 +58,32 @@ section.normal{
     text-align: justify;
 }
 section.imagem{
-    background-color: rgb(65, 65, 65);
+    background-color: rgb(3, 3, 3);
     color: white;
+    text-shadow: 2px 2px 0px black;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.534);
+    background-attachment: fixed;
     
+}
+section > p {
+    padding-bottom: 2em;
 }
 section.imagem > p{
     display: inline-block;
     padding: 5px;
     background: rgb(187, 187, 187);
+  
 }
-
+section#img0{
+    background-image: url(imagens/background001.jpg);
+    background-position:right center ;
+    background-size: cover;
+}
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    
+}
 footer{
     background-color: black;
     color: white;
