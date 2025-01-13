@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas HTML</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        table{
+            width: 50%;
+            border-collapse: collapse;
+            border: 5px solid black;
+        }
+        td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+       
+      
+
+        tr.linha
+        {
+            background-color: rgb(107, 105, 105);
+
+        }
+        td.dados{
+            background-color: yellow;
+        }
+        
+
+    </style>
 </head>
 <body>
     <table>
+        <!-- primeira linha  -->
         <tr>
             
             <td>A1</td>
@@ -14,16 +42,19 @@
             <td>C1</td>
 
         </tr>
-        <tr>
+        <!-- segunda linha  -->
+        <tr class="linha">
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
         </tr>
+        <!-- terceira linha  -->
         <tr>
             <td>A3</td>
-            <td>B3</td>
+            <td class="dados">B3</td>
             <td>C3</td>
         </tr>
+        <!-- quarta linha  -->
         <tr>
             <td>A4</td>
             <td>B4</td>
