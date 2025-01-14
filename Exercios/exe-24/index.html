@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Anatomia de tabelas Grandes</title>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- Anatomia para tabelas grandes
+     Table
+        CAPTION
+        THEAD
+            TR TH TD
+        TBODY
+            TR TH TD 
+        TFOOT
+            TR TH TD 
+         -->
+
+        <table>
+            <caption>população Das unidades Federativas</caption>
+            <thead>
+               <tr>
+                <th scope="col">
+                    Estado
+                </th>
+                <th scope="col" style="width: 50px;">
+                    população 
+                </th>
+               </tr> 
+            </thead>
+            <tbody> <tr>
+                    <td>
+                        São Paulo
+                    </td>
+                    <td class="num">
+                        45 919 045
+                    </td>
+                </tr>
+                <tr>
+                    <td> Minas Gerais</td>
+                    <td class="num"> 335 567 23</td>
+                </tr>
+                <tr>
+                    <td>
+                        Bahia
+                    </td>
+                    <td class="num"> 
+                        - 7395 390 3673
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Rio de Janeiro
+                    </td>
+                    <td class="num">
+                     90977
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ceara
+                    </td>
+                    <td class="num"> - 84</td>
+                </tr>
+                <tr>
+                    <td>roraima</td>
+                    <td class="num">4567 278</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">6394 8467 935 </td>
+                </tr>
+                <tr>
+                    <td>paraná</td>
+                    <td class="num"> 93 835 02 </td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">9539 029</td>
+                </tr>
+                 <tr>
+                    <td>
+                        Ceará
+                    </td>
+                    <td class="num">8 453 862 0</td>
+                 </tr>
+                 <tr>
+                    <td>santa catarina</td>
+                    <td class="num">6248 439</td>
+                 </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                  <th scope="row"> Total de Habitantes</th>
+                  <td class="num">0000</td>
+                </tr>
+            </tfoot>
+        </table>
+</body>
+</html>
