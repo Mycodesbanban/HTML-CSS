@@ -6,13 +6,18 @@ td.num{
 body{
     /* background-image: linear-gradient( to left , yellow , red); */
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    
+    font-size: larger;
+    text-align: justify;
+    text-decoration: none;
+    transform: none;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.315);
     
     
 }
 table{
      width: 500px;
      border-collapse: collapse;
+     position: relative;
 }
 
 
@@ -26,9 +31,24 @@ thead{
     background-color: rgb(54, 53, 53);
     color: white;
 }
+thead > tr > th{
+    position: sticky;
+    top: -1px;
+    background: rgb(127, 141, 140);
+    
+
+}
+tbody > tr:nth-child(even){ 
+    background-color: lightgrey;
+
+}
 caption{
      font-size: 1,5em;
      font-weight: bold;
      padding: 10px;
      background-color: lightgrey;
+}
+
+thead , tfoot{
+    background-color: rgb(204, 207, 207);
 }
