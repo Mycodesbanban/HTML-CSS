@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        th , td{
+            border: 1px solid black;
+            padding: 15px;
+            text-decoration: none;
+            text-align: justify;
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+           
+        }
+        caption{
+             font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            Filmes Favorito
+        </caption>
+        <thead>
+            <th  scope="col">Grupos</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Maria josefina</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>vingadores</td>
+            </tr>
+            <tr>
+                <td>beatriz souza</td>
+                <td>hulk</td>
+                <td>inception</td>
+                <td>batman</td>
+            </tr>
+            <tr>
+                <td>cláudia do cleudo</td>
+                <td>oblivion</td>
+                <td>Matrix</td>
+                <td>big hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno cabeça</td>
+                <td>intocáveis</td>
+                <td>Amsésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel cuelho</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>toy story</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
