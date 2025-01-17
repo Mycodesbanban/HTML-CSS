@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em agrupamento</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: border;
+            padding: 9px;
+        }
+        col.destaque{
+            background-color: rgb(199, 197, 197);
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+
+        <col class="destaque">
+        <col class="destaque1">
+        <col class="destaque2">
+        <col class="destaque3">
+        
+        
+        
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+           <td>Maria Barreto</td>
+           <td>F</td>
+           <td>45</td>
+           <td>Jonalista</td>
+        </tr>
+        <tr>
+            <td>Pedro Gay</td>
+            <td>M</td>
+            <td>44</td>
+            <td>Mecanico</td>
+        </tr>
+        <tr>
+            <td>José</td>
+            <td>M</td>
+            <td>34</td>
+            <td>cuzinheiro</td>
+        </tr>
+        <tr>
+            <td>Maycon</td>
+            <td>M</td>
+            <td>15</td>
+            <td>Programação</td>
+        </tr>
+        <tr>
+            <td>Maysa</td>
+            <td>F</td>
+            <td>15</td>
+            <td>Medica</td>
+        </tr>
+    </table>
+</body>
+</html>
