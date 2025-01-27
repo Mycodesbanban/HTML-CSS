@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Formulario</legend>
+            <label for="cors"><input type="checkbox" name="i" id="cors">Icros</label>
+        </fieldset>
+        <div>
+            <label for="Icor"></label>
+            <input type="color" name="cor" id="icor" value="#f2f2f2">
+        </div>
+        <div>
+            <label for="Nivel">Nivel de sastifação</label>
+            <input type="range" name="Inive" id="Nivel" required min="1" max="5" value="2">
+        </div>
+        <div>
+            <label for="perfil">Foto de perfil</label>
+            <input type="file" name="If" id="perfil">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
