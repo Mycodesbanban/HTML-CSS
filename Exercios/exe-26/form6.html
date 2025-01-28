@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <div>
+            <label for="Ies">Estado:</label>
+            <select name="Estado" id="Ies" required>
+                <optgruop label="Região 1">
+                    <option value="SP">São paulo</option>
+                    <option value="RJ" selected>Rio de janeiro</option>
+                    <option value="MG">Minas gerais</option>
+                    <option value="BH">Bahia</option>
+                </optgruop>
+
+                <optgroup label="Região 2">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernamanbuco</option>
+                    <option value="MA">Maranhão</option>
+                </optgroup>
+                <optgroup label="Região 0">
+                    <option value="NO">Não desejo falar</option>
+                </optgroup>
+            </select>
+        </div>
+       <div>
+            <label for="Iprof">Profissão</label>
+            <input type="text" name="prof" id="Iprof" list="Istprof">
+            <datalist id="Istprof">
+                <option value="ADM">Administrador</option>
+                <option value="Cont">Contabilidade</option>
+                <option value="TI">Tecnico de informatica</option>
+                <option value="ENG">Engenheiro</option>
+            </datalist>
+       </div>
+       <div>
+        <label for="Ims">Mensagem</label> <br>
+        <textarea name="Msg" id="Ims" col="30" rows="10">sua reclamação......</textarea>
+       </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
