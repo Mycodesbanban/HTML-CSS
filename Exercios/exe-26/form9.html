@@ -10,16 +10,22 @@
     <form action="cadastro.php" method="post">
         <div>
             <label for="Iano">|Em que ano você nasceu?</label>
-            <input type="number" name="ano" id="Iano" min="1945" max="2025" value="2000" maxlength="30">
+            <input type="number" name="ano" id="Iano" min="1945" max="2025"  maxlength="30" oninput="calIdade()">
         </div>
         <div>
             <label for="Iidade">Qual é sua idade</label>
-            <input type="number" name="idade" id="Iidade" max="120" min="2" value="22" >
+            <output id="Iidade"></output>
         </div>
         <div>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </div>
     </form>
+    <script>
+        function calIdade(){
+            let atual= new Date().getFullYear()
+            Iidade.innerHTML=Number(atual)-Number(Iano.value)
+        }
+    </script>
 </body>
 </html>
