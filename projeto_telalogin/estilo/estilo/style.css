@@ -41,7 +41,7 @@ section#login{
 }
 section#login > div#imagem{
     background: #5f2c82 url(imagens/imagem02.jpg) no-repeat;
-    height: 200px;
+    height: 190px;
     background-size: cover;
     display:block;
     
@@ -97,13 +97,37 @@ form > div > a.botao:hover{
 }
 form > div.campo{
      background-color: #5f2c82;
+     border: 2 solid #5f2c82;
      width: 100%;
      display: block;
      border-radius: 5px;
      margin:5px 0px;
+     padding: 5px;
+
 
 
 }
 div.campo> label{
     display: none;
+}
+div.campo > span{
+    color: rgb(236, 230, 230);
+    /* background-color: black; */
+    font-size:2em;
+    width: 40px;
+}
+div.campo>input{
+    background-color: #89faf6;
+    font-size: 1em;
+    width:calc(100%-45px);
+    transform: translateY(-10px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding:4px;
+
+}
+div.campo>input:focus-within{
+    background-color: white;
+    
 }
