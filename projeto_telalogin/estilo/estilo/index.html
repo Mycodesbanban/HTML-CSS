@@ -6,6 +6,7 @@
     <title>Tela de login</title>
     <link rel="stylesheet" href="style.css" >
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 <body>
     <main>
@@ -18,8 +19,31 @@
                 <h1>login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta</p>
                 <form action="cadrasto.php">
-                    <label for="Iemail">Email:</label>
-                    <input type="email" name="email" id="Iemail" required placeholder="Digite seu email" autocomplete="email">
+                    <div id="campo">
+                        <span class="material-symbols-outlined">
+                        person
+                            </span>
+                        <input type="email" name="email" id="Iemail" required placeholder="Digite seu email" autocomplete="email">
+                        <label for="Iemail"></label>
+                    </div>
+                    <div id="Senha">
+                        <label for="Isenha"></label>
+                        <span class="material-symbols-outlined">
+                            vpn_key 
+                            </span>
+                        <input type="password" name="Senha" id="Isenha" required placeholder="Digite sua senha" autocomplete="password">
+                        <label for="Isenha"></label>
+                    </div>
+                    <div>
+                        <button>
+                            <span id="esqueceu">
+                                <span>
+                                    esqueceu sua senha?
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                    <input type="submit" value="Entra" required>
                 </form>
             </div>
         </section>
