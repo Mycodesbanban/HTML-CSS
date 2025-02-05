@@ -19,31 +19,25 @@
                 <h1>login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta</p>
                 <form action="cadrasto.php">
-                    <div id="campo">
+                    <div class="campo">
                         <span class="material-symbols-outlined">
                         person
                             </span>
                         <input type="email" name="email" id="Iemail" required placeholder="Digite seu email" autocomplete="email">
                         <label for="Iemail"></label>
                     </div>
-                    <div id="Senha">
+                    <div class="campo">
                         <label for="Isenha"></label>
                         <span class="material-symbols-outlined">
                             vpn_key 
                             </span>
-                        <input type="password" name="Senha" id="Isenha" required placeholder="Digite sua senha" autocomplete="password">
+                        <input type="password" name="Senha" id="Isenha" required placeholder="Digite sua senha" autocomplete="password" max="15">
                         <label for="Isenha"></label>
                     </div>
+                    <input type="submit" value="Entrar" required>
                     <div>
-                        <button>
-                            <span id="esqueceu">
-                                <span>
-                                    esqueceu sua senha?
-                                </span>
-                            </span>
-                        </button>
+                        <a href="#"class="botao">Esqueceu a senha </a>
                     </div>
-                    <input type="submit" value="Entra" required>
                 </form>
             </div>
         </section>
