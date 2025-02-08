@@ -1,0 +1,11 @@
+@charset "UTF-8";
+div.titulo{
+    display: flex;
+    padding: 8px;
+     background-color: aquamarine;
+}
+div.item{
+    background-color: aliceblue;
+    border: 1px solid black;
+    flex: auto;
+}
