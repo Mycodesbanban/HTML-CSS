@@ -1,0 +1,15 @@
+@charset "UTF-8";
+div.titulo{
+    display: flex;
+     background-color: aquamarine;
+     flex-flow: row nowrap;
+     height: 300px;
+     justify-content: space-around;
+     align-items: center;
+}
+div.item{
+    background-color: aliceblue;
+    border: 1px solid black;
+    padding: 8px;
+
+}
