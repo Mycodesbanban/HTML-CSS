@@ -1,0 +1,12 @@
+@charset "UTF-8";
+div.titulo{
+    display: flex;
+     background-color: aquamarine;
+     flex-flow: row wrap;
+}
+div.item{
+    background-color: aliceblue;
+    border: 1px solid black;
+    text-align: center;
+    flex-basis: 105px;
+}
