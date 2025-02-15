@@ -2,11 +2,14 @@
 div.titulo{
     display: flex;
      background-color: aquamarine;
-     flex-flow: row wrap;
+    flex-flow: wrap row;
 }
 div.item{
     background-color: aliceblue;
     border: 1px solid black;
     text-align: center;
-    flex-basis: 105px;
+    flex-basis: 300px;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
+
